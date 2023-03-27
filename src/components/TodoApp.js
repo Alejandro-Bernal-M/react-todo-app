@@ -1,14 +1,17 @@
-import '../App.css';
+import React from 'react';
 import Header from './Header';
 import TodosLogic from './TodosLogic';
+import Navbar from './Navbar';
 
-function TodoApp() {
+const TodoApp = () => {
   return (
-    <>
-      <Header />
-      <TodosLogic />
-    </>
+    <div className="wrapper">
+      <div className="todos">
+        <Navbar />
+        <Header />
+        <TodosLogic />
+      </div>
+    </div>
   );
-}
-
+};
 export default TodoApp;
