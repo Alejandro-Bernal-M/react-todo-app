@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from "../styles/Header.module.css";
-
+import styles from '../styles/Header.module.css';
 
 const Header = () => {
   const headerStyle = {
@@ -9,10 +8,11 @@ const Header = () => {
     color: '#aeadad',
     textAlign: 'center',
   };
-  return(
+  return (
     <header style={headerStyle} className={styles.header}>
-    <h1>Todos</h1>
-    <p>Items will persist in the browser local storage</p>
-  </header>
-)};
+      <h1>Todos</h1>
+      <p>Items will persist in the browser local storage</p>
+    </header>
+  );
+};
 export default Header;
